@@ -234,3 +234,4 @@ set foldlevelstart=20
 " ultisnips
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
 " let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+set rnu

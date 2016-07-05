@@ -1,0 +1,38 @@
+snippet ds
+${1:stream} = DataStream(dataset=${1:dataset}, iteration_scheme=${3:scheme})
+$0
+endsnippet
+snippet gru
+fork${1:1} = Fork(input_dim=${2:input_dim}, output_dims=[
+    ${3:hidden_size}, $3 * 2], output_names=['linear$1', 'gates$1'])
+gru$1 = GatedRecurrent($3, name='gru$1')
+$0
+endsnippet
+snippet linear
+linear${1:1} = Linear(input_dim=${2:input_dim}, output_dim=${3:hidden_size},
+    name='linear$1')
+endsnippet
+snippet lstm
+linear${1:1} = Linear(input_dim=${2:input_dim}, output_dim=${3:hidden_size} * 4,
+    name='linear$1')
+lstm$1 = LSTM(dim=$3, name='lstm$1')
+$0
+endsnippet
+snippet ml
+main_loop = MainLoop(data_stream=${1:stream}, algorithm=${2:algorithm}, extensions=${3:extensions})
+$0
+endsnippet
+snippet gd
+algorithm = GradientDescent(cost=${1:cost}, parameters=${2:cg.parameters}, step_rule=${3:step_rule})
+$0
+endsnippet
+snippet ids
+${1:dataset} = IndexableDataset(
+    indexables=OrderedDict([('features', ${2:features}), ('targets', ${3:targets})]),
+    axis_labels={'features': ('batch', 'sequence'), 'targets': ('batch', 'index')})
+endsnippet
+snippet rnn
+linear${1:1} = Linear(input_dim=${2:input_dim}, output_dim=${3:hidden_size}, name='linear$1')
+rnn$1 = SimpleRecurrent(dim=$3, activation=${4:Tanh()}, name='rnn$1')
+$0
+endsnippet

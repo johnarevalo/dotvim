@@ -7,3 +7,8 @@ Installation
 Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
+
+Update all submodules:
+
+    cd ~/.vim
+    git submodule foreach git pull origin master

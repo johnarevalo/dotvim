@@ -50,7 +50,7 @@ vnoremap <Leader>s <C-C>:update<CR>
 inoremap <Leader>s <C-O>:update<CR>
 
 " Quick quit command
-noremap <Leader>e :bd<CR>  " Quit current window
+noremap <Leader>e :bn\|bd #<CR>  " Quit current window
 noremap <Leader>E :qa!<CR>   " Quit all windows
 
 

@@ -236,4 +236,5 @@ set foldlevelstart=20
 " let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 set rnu
 " autopep8
-" autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+autocmd VimResized * wincmd =

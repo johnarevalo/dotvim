@@ -34,6 +34,7 @@ set bs=2     " make backspace behave like normal again
 " I like to have it here becuase it is easier to reach than the default and
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
 let mapleader = ","
+let maplocalleader = ","
 
 
 " Bind nohl

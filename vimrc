@@ -239,3 +239,4 @@ set rnu
 " autopep8
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 autocmd VimResized * wincmd =
+let g:vimtex_indent_enabled=1

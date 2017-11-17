@@ -1,4 +1,4 @@
-
+set nocompatible
 " Setup Pathogen to manage your plugins
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
@@ -25,8 +25,6 @@ set clipboard=unnamed
 "Allow undo after change buffer
 set hidden
 
-" Mouse and backspace
-"" set mouse=a  " on OSX press ALT and click
 set bs=2     " make backspace behave like normal again
 
 
@@ -77,10 +75,6 @@ nnoremap <Leader>8 :b! 8<CR>
 nnoremap <Leader>9 :b! 9<CR>
 nnoremap <Leader>0 :b! 10<CR>
 
-" map sort function to a key
-"" vnoremap <Leader>s :sort<CR>
-
-
 " easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
 " then press ``>`` several times.
@@ -103,7 +97,7 @@ color wombat256mod
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
-filetype off
+filetype on
 filetype plugin indent on
 syntax on
 
@@ -180,21 +174,6 @@ set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 
 
-" Settings for python-mode
-" Note: I'm no longer using this. Leave this commented out
-" and uncomment the part about jedi-vim instead
-" cd ~/.vim/bundle
-" git clone https://github.com/klen/python-mode
-"" map <Leader>g :call RopeGotoDefinition()<CR>
-"" let ropevim_enable_shortcuts = 1
-"" let g:pymode_rope_goto_def_newwin = "vnew"
-"" let g:pymode_rope_extended_complete = 1
-"" let g:pymode_breakpoint = 0
-"" let g:pymode_syntax = 1
-"" let g:pymode_syntax_builtin_objs = 0
-"" let g:pymode_syntax_builtin_funcs = 0
-"" map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
 " Settings for jedi-vim
 " cd ~/.vim/bundle
 " git clone git://github.com/davidhalter/jedi-vim.git
@@ -239,4 +218,8 @@ set rnu
 " autopep8
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 autocmd VimResized * wincmd =
+" vimtex
+let g:vimtex_enabled=1
 let g:vimtex_indent_enabled=1
+let g:vimtex_format_enabled=1
+let g:tex_flavor='latex'

@@ -92,7 +92,7 @@ vnoremap > >gv  " better indentation
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-color wombat256mod
+color wombat
 
 
 " Enable syntax highlighting

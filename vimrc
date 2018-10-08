@@ -1,3 +1,6 @@
+if has('python3')
+  silent! python3 1
+endif
 set nocompatible
 " Setup Pathogen to manage your plugins
 " mkdir -p ~/.vim/autoload ~/.vim/bundle

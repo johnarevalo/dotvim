@@ -174,6 +174,7 @@ let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
+set wildignore+=*/env/*
 
 
 " Settings for jedi-vim
@@ -225,3 +226,11 @@ let g:vimtex_enabled=1
 let g:vimtex_indent_enabled=1
 let g:vimtex_format_enabled=1
 let g:tex_flavor='latex'
+
+" autocmd vimenter * NERDTree
+
+" easy align markdown
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+
+" json format
+nmap =j :%!python -m json.tool<CR>

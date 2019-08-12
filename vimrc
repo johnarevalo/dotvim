@@ -167,14 +167,13 @@ command Gtdiff tabedit %|Gvdiff
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
-" Settings for ctrlp
-" cd ~/.vim/bundle
-" git clone https://github.com/kien/ctrlp.vim.git
-let g:ctrlp_max_height = 30
-set wildignore+=*.pyc
-set wildignore+=*_build/*
-set wildignore+=*/coverage/*
-set wildignore+=*/env/*
+" Settings for fzf
+set rtp+=~/.vim/bundle/fzf
+set rtp+=/usr/local/opt/fzf
+nmap <Leader>f :GFiles<CR>
+nmap <Leader>F :Files<CR>
+nmap <Leader>k :BLines<CR>
+nmap <Leader>K :Lines<CR>
 
 
 " Settings for jedi-vim

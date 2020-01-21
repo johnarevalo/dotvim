@@ -2,12 +2,6 @@ if has('python3')
   silent! python3 1
 endif
 set nocompatible
-" Setup Pathogen to manage your plugins
-" mkdir -p ~/.vim/autoload ~/.vim/bundle
-" curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-" Now you can install any plugin into a .vim/bundle/plugin-name/ folder
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
 
 " Map arrow keys to move through windows
 map <up> :wincmd k<CR>
@@ -155,8 +149,8 @@ set noswapfile
 " cd ~/.vim/bundle
 " git clone git://github.com/tpope/vim-fugitive.git
 " vim -u NONE -c 'helptags vim-fugitive/doc' -c q
-map <Leader>hb <Plug>GitGutterPrevHunk
-map <Leader>hn <Plug>GitGutterNextHunk
+map <Leader>hb <Plug>(GitGutterPrevHunk)
+map <Leader>hn <Plug>(GitGutterNextHunk)
 command Gtdiff tabedit %|Gvdiff
 " ============================================================================
 " Python IDE Setup

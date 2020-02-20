@@ -36,3 +36,8 @@ linear${1:1} = Linear(input_dim=${2:input_dim}, output_dim=${3:hidden_size}, nam
 rnn$1 = SimpleRecurrent(dim=$3, activation=${4:Tanh()}, name='rnn$1')
 $0
 endsnippet
+snippet withjson
+with open(${1:filepath}) as fp:
+    ${2:data} = json.load(fp)
+endsnippet
+

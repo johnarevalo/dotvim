@@ -47,7 +47,8 @@ vnoremap <Leader>s <C-C>:update<CR>
 inoremap <Leader>s <C-O>:update<CR>
 
 " Quick quit command
-noremap <Leader>e :bn\|bd #<CR>  " Quit current buffer
+" noremap <Leader>e :bn\|bd #<CR>  " Quit current buffer
+noremap <Leader>e :q<CR>  " Quit current window
 
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
@@ -126,6 +127,7 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
+
 
 
 " Make search case insensitive
@@ -232,3 +234,11 @@ nmap =j :%!python -m json.tool<CR>
 
 " syntastic
 let g:syntastic_python_checker=['pylint']
+
+" Add run commands: F5 run, F6 run test
+autocmd Filetype python nnoremap <buffer> <F5> :w<CR>:ter python3 "%"<CR>
+autocmd Filetype python nnoremap <buffer> <F6> :w<CR>:ter python3 "%:r_test.py"<CR>
+autocmd Filetype python nnoremap <buffer> <F7> :w<CR>:ter ipython -i "%"<CR>
+
+" For org-mode files
+autocmd Filetype org setlocal tabstop=2

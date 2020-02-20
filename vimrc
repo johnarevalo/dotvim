@@ -232,8 +232,6 @@ au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 " json format
 nmap =j :%!python -m json.tool<CR>
 
-" syntastic
-let g:syntastic_python_checker=['pylint']
 
 " Add run commands: F5 run, F6 run test
 autocmd Filetype python nnoremap <buffer> <F5> :w<CR>:ter python3 "%"<CR>

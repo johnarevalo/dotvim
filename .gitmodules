@@ -46,12 +46,12 @@
 [submodule "bundle/easy-align"]
 	path = pack/plugins/start/easy-align
 	url = https://github.com/junegunn/vim-easy-align
-[submodule "bundle/syntastic"]
-	path = pack/plugins/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
 [submodule "bundle/fzf"]
 	path = pack/plugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
 [submodule "bundle/fzf-vim"]
 	path = pack/plugins/start/fzf-vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/plugins/start/ale"]
+	path = pack/plugins/start/ale
+	url = https://github.com/dense-analysis/ale.git

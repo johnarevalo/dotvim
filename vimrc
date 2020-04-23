@@ -240,3 +240,9 @@ autocmd Filetype python nnoremap <buffer> <F7> :w<CR>:ter ipython -i "%"<CR>
 
 " For org-mode files
 autocmd Filetype org setlocal tabstop=2
+
+" vim-test
+let test#strategy = "vimterminal"
+nmap <Leader>tn :TestNearest<CR>
+nmap <Leader>tf :TestFile<CR>
+nmap <Leader>ts :TestSuite<CR>

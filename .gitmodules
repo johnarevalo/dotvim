@@ -55,3 +55,6 @@
 [submodule "pack/plugins/start/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "pack/plugins/start/vim-test"]
+	path = pack/plugins/start/vim-test
+	url = https://github.com/janko/vim-test.git

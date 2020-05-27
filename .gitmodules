@@ -46,9 +46,6 @@
 [submodule "bundle/easy-align"]
 	path = pack/plugins/start/easy-align
 	url = https://github.com/junegunn/vim-easy-align
-[submodule "bundle/fzf"]
-	path = pack/plugins/start/fzf
-	url = https://github.com/junegunn/fzf.git
 [submodule "bundle/fzf-vim"]
 	path = pack/plugins/start/fzf-vim
 	url = https://github.com/junegunn/fzf.vim.git

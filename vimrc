@@ -1,7 +1,7 @@
-if has('python3')
-  silent! python3 1
-endif
 set nocompatible
+
+" enable count match
+set shortmess-=S
 
 " Map arrow keys to move through windows
 map <up> :wincmd k<CR>
@@ -233,9 +233,9 @@ nmap =j :%!python -m json.tool<CR>
 
 
 " Add run commands: F5 run, F6 run test
-autocmd Filetype python nnoremap <buffer> <F5> :w<CR>:ter python3 "%"<CR>
-autocmd Filetype python nnoremap <buffer> <F6> :w<CR>:ter python3 "%:r_test.py"<CR>
-autocmd Filetype python nnoremap <buffer> <F7> :w<CR>:ter ipython -i "%"<CR>
+autocmd Filetype python nnoremap <buffer> <F5> :w<CR>:below ter python3 "%"<CR>
+autocmd Filetype python nnoremap <buffer> <F6> :w<CR>:below ter python3 "%:r_test.py"<CR>
+autocmd Filetype python nnoremap <buffer> <F7> :w<CR>:below ter ipython -i "%"<CR>
 
 " For org-mode files
 autocmd Filetype org setlocal tabstop=2

@@ -48,7 +48,7 @@ inoremap <Leader>s <C-O>:update<CR>
 
 " Quick quit command
 " noremap <Leader>e :bn\|bd #<CR>  " Quit current buffer
-noremap <Leader>e :q<CR>  " Quit current window
+noremap <Leader>e :q<CR>
 
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>

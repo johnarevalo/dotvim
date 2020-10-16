@@ -245,3 +245,6 @@ let test#strategy = "vimterminal"
 nmap <Leader>tn :TestNearest<CR>
 nmap <Leader>tf :TestFile<CR>
 nmap <Leader>ts :TestSuite<CR>
+
+" vim-orgmode
+:let g:org_agenda_files=['~/projects/todo.org']

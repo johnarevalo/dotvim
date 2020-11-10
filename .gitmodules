@@ -58,3 +58,6 @@
 [submodule "pack/plugins/start/fzf"]
 	path = pack/plugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "pack/plugins/start/dispatch"]
+	path = pack/plugins/start/dispatch
+	url = https://github.com/tpope/vim-dispatch.git

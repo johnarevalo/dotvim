@@ -2,7 +2,7 @@ Installation
 
     git clone https://github.com/johnarevalo/dotvim.git ~/.vim/
     cd ~/.vim
-    git submodule update --init
+    git submodule update --init --recursive
 
 Create symlinks:
 

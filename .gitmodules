@@ -61,3 +61,9 @@
 [submodule "pack/plugins/start/dispatch"]
 	path = pack/plugins/start/dispatch
 	url = https://github.com/tpope/vim-dispatch.git
+[submodule "pack/plugins/start/emmet"]
+	path = pack/plugins/start/emmet
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "pack/plugins/start/prettier"]
+	path = pack/plugins/start/prettier
+	url = https://github.com/prettier/vim-prettier

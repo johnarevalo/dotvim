@@ -91,8 +91,8 @@ vnoremap > >gv  " better indentation
 " Color scheme
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
-set t_Co=256
-color wombat
+set background=light
+colorscheme solarized
 
 
 " Enable syntax highlighting
@@ -109,7 +109,6 @@ set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
 if exists('+colorcolumn')
     set colorcolumn=80
-    highlight ColorColumn ctermbg=233
 endif
 
 

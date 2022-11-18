@@ -67,3 +67,6 @@
 [submodule "pack/plugins/start/prettier"]
 	path = pack/plugins/start/prettier
 	url = https://github.com/prettier/vim-prettier
+[submodule "pack/plugins/start/solarized-theme"]
+	path = pack/plugins/start/solarized-theme
+	url = git@github.com:altercation/vim-colors-solarized.git

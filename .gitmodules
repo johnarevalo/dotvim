@@ -1,12 +1,3 @@
-[submodule "bundle/auto-pairs"]
-	path = pack/plugins/start/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "bundle/jedi"]
-	path = pack/plugins/start/jedi
-	url = https://github.com/davidhalter/jedi-vim.git
-[submodule "bundle/supertab"]
-	path = pack/plugins/start/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/airline"]
 	path = pack/plugins/start/airline
 	url = https://github.com/bling/vim-airline
@@ -49,9 +40,6 @@
 [submodule "bundle/fzf-vim"]
 	path = pack/plugins/start/fzf-vim
 	url = https://github.com/junegunn/fzf.vim.git
-[submodule "pack/plugins/start/ale"]
-	path = pack/plugins/start/ale
-	url = https://github.com/dense-analysis/ale.git
 [submodule "pack/plugins/start/vim-test"]
 	path = pack/plugins/start/vim-test
 	url = https://github.com/janko/vim-test.git

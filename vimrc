@@ -18,7 +18,9 @@ map <A-up> :bprevious<CR>
 " paste. At the bottom you should see ``-- INSERT (paste) --``.
 
 set pastetoggle=<F2>
-set clipboard=unnamed
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
 
 "Allow undo after change buffer
 set hidden
@@ -155,10 +157,6 @@ set noswapfile
 map <Leader>hb <Plug>(GitGutterPrevHunk)
 map <Leader>hn <Plug>(GitGutterNextHunk)
 command Gtdiff tabedit %|Gvdiff
-" ============================================================================
-" Python IDE Setup
-" ============================================================================
-
 
 " Settings for vim-airline
 " git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
@@ -169,8 +167,9 @@ let g:airline#extensions#tabline#enabled = 1
 set rtp+=~/.vim/pack/plugins/start/fzf
 nmap <Leader>f :GFiles<CR>
 nmap <Leader>F :Files<CR>
-nmap <Leader>k :BLines<CR>
-nmap <Leader>K :Lines<CR>
+nmap <Leader>K :BLines<CR>
+nmap <Leader>k :Lines<CR>
+nmap <Leader>l :Buffers<CR>
 
 
 " Settings for jedi-vim
@@ -224,8 +223,6 @@ let g:vimtex_indent_enabled=1
 let g:vimtex_format_enabled=1
 let g:tex_flavor='latex'
 
-" autocmd vimenter * NERDTree
-
 " easy align markdown
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
@@ -233,11 +230,13 @@ au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 nmap =j :%!python -m json.tool<CR>
 
 
-" Add run commands: F5 run, F6 run test
-autocmd Filetype python nnoremap <buffer> <F5> :w<CR>:below ter python3 "%"<CR>
-autocmd Filetype python nnoremap <buffer> <F6> :w<CR>:below ter python3 "%:r_test.py"<CR>
-autocmd Filetype python nnoremap <buffer> <F7> :w<CR>:below ter ipython -i "%"<CR>
+" Add run commands: F5 run, F7 run with ipython
+autocmd Filetype python nnoremap <F5> :w<CR>:below ter python3 "%"<CR>
+autocmd Filetype python nnoremap <F7> :w<CR>:below ter ipython -i "%"<CR>
 
+autocmd FileType python set shiftwidth=4
+autocmd FileType python set tabstop=4
+autocmd FileType python set softtabstop=4
 " For org-mode files
 autocmd Filetype org setlocal tabstop=2
 

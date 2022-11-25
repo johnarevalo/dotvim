@@ -1,0 +1,4 @@
+{
+    "pyright.inlayHints.variableTypes": false,
+    "pyright.testing.provider": "pytest"
+}

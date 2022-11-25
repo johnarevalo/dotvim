@@ -13,9 +13,6 @@
 [submodule "bundle/surround"]
 	path = pack/plugins/start/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/ultisnips"]
-	path = pack/plugins/start/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
 [submodule "bundle/vim-snippets"]
 	path = pack/plugins/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
@@ -58,3 +55,6 @@
 [submodule "pack/plugins/start/solarized-theme"]
 	path = pack/plugins/start/solarized-theme
 	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "pack/plugins/start/coc"]
+	path = pack/plugins/start/coc
+	url = git@github.com:neoclide/coc.nvim.git

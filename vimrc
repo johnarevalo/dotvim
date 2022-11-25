@@ -71,6 +71,8 @@ vnoremap > >gv  " better indentation
 " Color scheme
 set background=light
 colorscheme solarized
+let g:solarized_visibility="normal"
+let g:solarized_contrast="normal"
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
@@ -121,25 +123,13 @@ command Gtdiff tabedit %|Gvdiff
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
-" Settings for fzf
-set rtp+=~/.vim/pack/plugins/start/fzf
-nmap <Leader>f :GFiles<CR>
-nmap <Leader>F :Files<CR>
-nmap <Leader>K :BLines<CR>
-nmap <Leader>k :Lines<CR>
-nmap <Leader>l :Buffers<CR>
-
-
-" Disable show diff window
-let g:autopep8_disable_show_diff=1
-
 " folding mode
 set foldnestmax=2
 set foldmethod=indent
 set foldlevelstart=20
 
-" autopep8
-autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+" autoformat
+noremap <buffer> <F8> :Format<CR>
 autocmd VimResized * wincmd =
 
 " vimtex
@@ -168,3 +158,5 @@ let test#strategy = "vimterminal"
 nmap <Leader>tn :TestNearest<CR>
 nmap <Leader>tf :TestFile<CR>
 nmap <Leader>ts :TestSuite<CR>
+
+runtime coc.vim

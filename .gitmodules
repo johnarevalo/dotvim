@@ -19,18 +19,15 @@
 [submodule "bundle/airline-themes"]
 	path = pack/plugins/start/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "bundle/fzf-vim"]
-	path = pack/plugins/start/fzf-vim
-	url = https://github.com/junegunn/fzf.vim.git
 [submodule "pack/plugins/start/vim-test"]
 	path = pack/plugins/start/vim-test
 	url = https://github.com/janko/vim-test.git
-[submodule "pack/plugins/start/fzf"]
-	path = pack/plugins/start/fzf
-	url = https://github.com/junegunn/fzf.git
 [submodule "pack/plugins/start/dispatch"]
 	path = pack/plugins/start/dispatch
 	url = https://github.com/tpope/vim-dispatch.git
 [submodule "pack/plugins/start/solarized-theme"]
 	path = pack/plugins/start/solarized-theme
 	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "pack/plugins/start/coc"]
+	path = pack/plugins/start/coc
+	url = git@github.com:neoclide/coc.nvim.git

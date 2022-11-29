@@ -69,10 +69,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
-" Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).
@@ -156,3 +152,8 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+"===============================================================================
+" coc extensions
+"===============================================================================
+let g:coc_global_extensions = ['coc-pyright', 'coc-pairs']

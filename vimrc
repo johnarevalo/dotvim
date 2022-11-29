@@ -18,6 +18,8 @@ map <A-up> :bprevious<CR>
 " paste. At the bottom you should see ``-- INSERT (paste) --``.
 
 set pastetoggle=<F2>
+
+" Better clipboard handling
 if has('unnamedplus')
   set clipboard=unnamed,unnamedplus
 endif
@@ -119,6 +121,12 @@ map <Leader>hb <Plug>(GitGutterPrevHunk)
 map <Leader>hn <Plug>(GitGutterNextHunk)
 command Gtdiff tabedit %|Gvdiff
 
+
+" Settings for fzf
+set rtp+=~/.vim/pack/plugins/start/fzf
+nmap <Space>f :GFiles<CR>
+nmap <Space>F :Files<CR>
+
 " Settings for vim-airline
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
@@ -154,9 +162,12 @@ autocmd Filetype org setlocal tabstop=2
 :let g:org_agenda_files=['~/projects/todo.org']
 
 " vim-test
-let test#strategy = "vimterminal"
+let test#strategy = "dispatch"
 nmap <Leader>tn :TestNearest<CR>
 nmap <Leader>tf :TestFile<CR>
 nmap <Leader>ts :TestSuite<CR>
+
+" dispatch
+" autocmd FileType python let b:dispatch = 'python %'
 
 runtime coc.vim

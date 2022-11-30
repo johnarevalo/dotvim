@@ -162,12 +162,14 @@ autocmd Filetype org setlocal tabstop=2
 :let g:org_agenda_files=['~/projects/todo.org']
 
 " vim-test
-let test#strategy = "dispatch"
+let test#strategy = "make"
+let test#python#pytest#options = '--tb=native'
 nmap <Leader>tn :TestNearest<CR>
 nmap <Leader>tf :TestFile<CR>
 nmap <Leader>ts :TestSuite<CR>
 
+
 " dispatch
-" autocmd FileType python let b:dispatch = 'python %'
+" autocmd FileType python let b:dispatch = 'pylint -f parseable %'
 
 runtime coc.vim

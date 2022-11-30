@@ -12,3 +12,9 @@ Update all submodules:
 
     cd ~/.vim
     git submodule foreach git pull origin master
+
+
+Install CoC libraries (requires yarn)
+    
+    cd ~/.vim/pack/plugins/start/coc
+    yarn instal

@@ -1,18 +1,6 @@
-[submodule "bundle/auto-pairs"]
-	path = pack/plugins/start/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "bundle/jedi"]
-	path = pack/plugins/start/jedi
-	url = https://github.com/davidhalter/jedi-vim.git
-[submodule "bundle/supertab"]
-	path = pack/plugins/start/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/airline"]
 	path = pack/plugins/start/airline
 	url = https://github.com/bling/vim-airline
-[submodule "bundle/autopep8"]
-	path = pack/plugins/start/autopep8
-	url = https://github.com/tell-k/vim-autopep8.git
 [submodule "bundle/fugitive"]
 	path = pack/plugins/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -22,51 +10,33 @@
 [submodule "bundle/surround"]
 	path = pack/plugins/start/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/ultisnips"]
-	path = pack/plugins/start/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
-[submodule "bundle/vim-snippets"]
-	path = pack/plugins/start/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
 [submodule "bundle/vimtex"]
 	path = pack/plugins/start/vimtex
 	url = https://github.com/lervag/vimtex.git
 [submodule "bundle/vim-orgmode"]
 	path = pack/plugins/start/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode.git
-[submodule "bundle/vim-speeddating"]
-	path = pack/plugins/start/vim-speeddating
-	url = https://github.com/tpope/vim-speeddating.git
 [submodule "bundle/airline-themes"]
 	path = pack/plugins/start/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "bundle/nerdtree"]
-	path = pack/plugins/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/easy-align"]
-	path = pack/plugins/start/easy-align
-	url = https://github.com/junegunn/vim-easy-align
-[submodule "bundle/fzf-vim"]
-	path = pack/plugins/start/fzf-vim
-	url = https://github.com/junegunn/fzf.vim.git
-[submodule "pack/plugins/start/ale"]
-	path = pack/plugins/start/ale
-	url = https://github.com/dense-analysis/ale.git
 [submodule "pack/plugins/start/vim-test"]
 	path = pack/plugins/start/vim-test
 	url = https://github.com/janko/vim-test.git
-[submodule "pack/plugins/start/fzf"]
-	path = pack/plugins/start/fzf
-	url = https://github.com/junegunn/fzf.git
 [submodule "pack/plugins/start/dispatch"]
 	path = pack/plugins/start/dispatch
 	url = https://github.com/tpope/vim-dispatch.git
-[submodule "pack/plugins/start/emmet"]
-	path = pack/plugins/start/emmet
-	url = https://github.com/mattn/emmet-vim.git
-[submodule "pack/plugins/start/prettier"]
-	path = pack/plugins/start/prettier
-	url = https://github.com/prettier/vim-prettier
 [submodule "pack/plugins/start/solarized-theme"]
 	path = pack/plugins/start/solarized-theme
 	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "pack/plugins/start/coc"]
+	path = pack/plugins/start/coc
+	url = git@github.com:neoclide/coc.nvim.git
+[submodule "pack/plugins/start/fzf"]
+	path = pack/plugins/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "pack/plugins/start/fzf-vim"]
+	path = pack/plugins/start/fzf-vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/plugins/start/unimpaired"]
+	path = pack/plugins/start/unimpaired
+	url = git@github.com:tpope/vim-unimpaired.git

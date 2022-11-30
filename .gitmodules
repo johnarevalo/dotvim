@@ -37,3 +37,6 @@
 [submodule "pack/plugins/start/fzf-vim"]
 	path = pack/plugins/start/fzf-vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/plugins/start/unimpaired"]
+	path = pack/plugins/start/unimpaired
+	url = git@github.com:tpope/vim-unimpaired.git

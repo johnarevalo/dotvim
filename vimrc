@@ -121,7 +121,6 @@ map <Leader>hb <Plug>(GitGutterPrevHunk)
 map <Leader>hn <Plug>(GitGutterNextHunk)
 command Gtdiff tabedit %|Gvdiff
 
-
 " Settings for fzf
 set rtp+=~/.vim/pack/plugins/start/fzf
 nmap <Space>f :GFiles<CR>
@@ -135,41 +134,5 @@ let g:airline#extensions#tabline#enabled = 1
 set foldnestmax=2
 set foldmethod=indent
 set foldlevelstart=20
-
-" autoformat
-noremap <buffer> <F8> :Format<CR>
-autocmd VimResized * wincmd =
-
-" vimtex
-let g:vimtex_enabled=1
-let g:vimtex_indent_enabled=1
-let g:vimtex_format_enabled=1
-let g:tex_flavor='latex'
-
-" easy align markdown
-au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
-
-" json format
-nmap =j :%!python -m json.tool<CR>
-
-" Commands for python files
-autocmd Filetype python nnoremap <F5> :w<CR>:below ter python3 "%"<CR>
-autocmd Filetype python nnoremap <F7> :w<CR>:below ter ipython -i "%"<CR>
-autocmd Filetype python map <Leader>m Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
-" For org-mode files
-autocmd Filetype org setlocal tabstop=2
-:let g:org_agenda_files=['~/projects/todo.org']
-
-" vim-test
-let test#strategy = "make"
-let test#python#pytest#options = '--tb=native'
-nmap <Leader>tn :TestNearest<CR>
-nmap <Leader>tf :TestFile<CR>
-nmap <Leader>ts :TestSuite<CR>
-
-
-" dispatch
-" autocmd FileType python let b:dispatch = 'pylint -f parseable %'
 
 runtime coc.vim

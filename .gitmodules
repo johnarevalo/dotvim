@@ -11,7 +11,7 @@
 	path = pack/plugins/start/surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vimtex"]
-	path = pack/plugins/start/vimtex
+	path = pack/plugins/opt/vimtex
 	url = https://github.com/lervag/vimtex.git
 [submodule "bundle/vim-orgmode"]
 	path = pack/plugins/start/vim-orgmode

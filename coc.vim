@@ -5,6 +5,9 @@ set encoding=utf-8
 set nobackup
 set nowritebackup
 
+" autoformat
+noremap <buffer> <F8> :Format<CR>
+
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=300

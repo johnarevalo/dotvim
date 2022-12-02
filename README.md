@@ -15,6 +15,6 @@ Update all submodules:
 
 
 Install CoC libraries (requires yarn)
-    
+
     cd ~/.vim/pack/plugins/start/coc
-    yarn instal
+    yarn install

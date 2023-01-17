@@ -125,6 +125,7 @@ command Gtdiff tabedit %|Gvdiff
 set rtp+=~/.vim/pack/plugins/start/fzf
 nmap <Space>f :GFiles<CR>
 nmap <Space>F :Files<CR>
+nmap <Space>b :Buffers<CR>
 
 " Settings for vim-airline
 set laststatus=2

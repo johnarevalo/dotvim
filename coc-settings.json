@@ -1,5 +1,6 @@
 {
     "pyright.inlayHints.variableTypes": false,
     "pyright.testing.provider": "pytest",
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "yapf"
 }

@@ -127,6 +127,14 @@ nmap <Space>f :GFiles<CR>
 nmap <Space>F :Files<CR>
 nmap <Space>b :Buffers<CR>
 
+" Command to search in git repo
+command! -bang -nargs=* GGrep
+  \ call fzf#vim#grep(
+  \   'git grep --line-number -- '.shellescape(<q-args>), 0,
+  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+
+nmap <Space>g :GGrep<CR>
+
 " Settings for vim-airline
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1

@@ -8,10 +8,10 @@ map <up> :wincmd k<CR>
 map <down> :wincmd j<CR>
 map <right> :wincmd l<CR>
 map <left> :wincmd h<CR>
-map <A-right> :tabnext<CR>
-map <A-left> :tabprevious<CR>
-map <A-down> :bnext<CR>
-map <A-up> :bprevious<CR>
+" map <A-right> :tabnext<CR>
+" map <A-left> :tabprevious<CR>
+" map <A-down> :bnext<CR>
+" map <A-up> :bprevious<CR>
 
 " Better copy & paste
 " When you want to paste large blocks of code into vim, press F2 before you
@@ -51,7 +51,7 @@ inoremap <Leader>s <C-O>:update<CR>
 noremap <Leader>e :q<CR>
 
 " Close current buffer
-noremap <Leader>c :bn\|bd #<CR>
+noremap <silent> <Leader>c :b#<bar>bd#<CR>
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
 " Every unnecessary keystroke that can be saved is good for your health :)
@@ -61,8 +61,8 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 " easier moving between buffers
-map <Leader>b <esc>:bprevious!<CR>
-map <Leader>n <esc>:bnext!<CR>
+" map <Leader>b <esc>:bprevious!<CR>
+" map <Leader>n <esc>:bnext!<CR>
 
 " easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
@@ -119,7 +119,7 @@ set noswapfile
 " vim -u NONE -c 'helptags vim-fugitive/doc' -c q
 map <Leader>hb <Plug>(GitGutterPrevHunk)
 map <Leader>hn <Plug>(GitGutterNextHunk)
-command Gtdiff tabedit %|Gvdiff
+map <Leader>g :below G<CR>
 
 " Settings for fzf
 set rtp+=~/.vim/pack/plugins/start/fzf

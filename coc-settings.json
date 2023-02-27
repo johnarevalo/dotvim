@@ -2,5 +2,8 @@
     "pyright.inlayHints.variableTypes": false,
     "pyright.testing.provider": "pytest",
     "python.linting.pylintEnabled": true,
-    "python.formatting.provider": "yapf"
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "yapf",
+    "coc.preferences.extensionUpdateCheck": "never",
+    "coc.preferences.jumpCommand": "tab drop"
 }

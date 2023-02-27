@@ -3,9 +3,8 @@ nnoremap <F7> :w<CR>:below ter ipython -i "%"<CR>
 map <Leader>m Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " vim-test
-let test#strategy = "make"
+let test#strategy = "dispatch"
 let test#python#runner = 'pytest'
-let test#python#pytest#options = '--tb=native'
 
 nmap <Leader>tn :TestNearest<CR>
 nmap <Leader>tf :TestFile<CR>

@@ -27,6 +27,9 @@ endif
 "Allow undo after change buffer
 set hidden
 
+" Delete completed terminal commands
+" au TerminalWinOpen * setlocal bufhidden=delete
+
 set bs=2     " make backspace behave like normal again
 
 " Rebind <Leader> key
@@ -51,7 +54,7 @@ inoremap <Leader>s <C-O>:update<CR>
 noremap <Leader>e :q<CR>
 
 " Close current buffer
-noremap <silent> <Leader>c :b#<bar>bd#<CR>
+noremap <Leader>c :bwipeout<CR>
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
 " Every unnecessary keystroke that can be saved is good for your health :)

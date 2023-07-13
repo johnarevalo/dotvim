@@ -4,6 +4,5 @@
     "python.linting.pylintEnabled": true,
     "python.linting.mypyEnabled": true,
     "python.formatting.provider": "yapf",
-    "coc.preferences.extensionUpdateCheck": "never",
-    "coc.preferences.jumpCommand": "tab drop"
+    "coc.preferences.extensionUpdateCheck": "never"
 }

@@ -23,6 +23,7 @@ set pastetoggle=<F2>
 if has('unnamedplus')
   set clipboard=unnamed,unnamedplus
 endif
+set clipboard=unnamed
 
 "Allow undo after change buffer
 set hidden

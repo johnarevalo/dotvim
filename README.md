@@ -11,7 +11,7 @@ Create symlinks:
 Update all submodules:
 
     cd ~/.vim
-    git submodule foreach git pull origin master
+    git submodule update --remote
 
 
 Install CoC libraries (requires yarn)

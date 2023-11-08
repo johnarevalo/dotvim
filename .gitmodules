@@ -41,3 +41,6 @@
 [submodule "pack/plugins/start/unimpaired"]
 	path = pack/plugins/start/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "pack/plugins/start/snakemake"]
+	path = pack/plugins/start/snakemake
+	url = https://github.com/johnarevalo/vim-snakemake

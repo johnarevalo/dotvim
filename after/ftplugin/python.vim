@@ -1,6 +1,6 @@
 nnoremap <F5> :w<CR>:below ter python3 "%"<CR>
 nnoremap <F7> :w<CR>:below ter ipython -i "%"<CR>
-map <Leader>m Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+map <Leader>m Obreakpoint()<C-c>
 
 " vim-test
 let test#strategy = "dispatch"

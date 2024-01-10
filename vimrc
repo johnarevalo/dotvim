@@ -1,5 +1,11 @@
 set nocompatible
 
+" Enable syntax highlighting
+" You need to reload this file for the change to apply
+filetype on
+filetype plugin indent on
+syntax on
+
 " enable count match
 set shortmess-=S
 
@@ -67,9 +73,6 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-" easier moving between buffers
-" map <Leader>b <esc>:bprevious!<CR>
-" map <Leader>n <esc>:bnext!<CR>
 
 " easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
@@ -83,18 +86,13 @@ colorscheme solarized
 let g:solarized_visibility="normal"
 let g:solarized_contrast="normal"
 
-" Enable syntax highlighting
-" You need to reload this file for the change to apply
-filetype on
-filetype plugin indent on
-syntax on
 
 " Showing line numbers and length
 set number  " show line numbers
+set rnu     " relative line number
 set tw=79   " width of document (used by gd)
 set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
-set rnu     " relative line number
 if exists('+colorcolumn')
     set colorcolumn=80
 endif
@@ -124,8 +122,8 @@ set noswapfile
 " cd ~/.vim/bundle
 " git clone git://github.com/tpope/vim-fugitive.git
 " vim -u NONE -c 'helptags vim-fugitive/doc' -c q
-map <Leader>hb <Plug>(GitGutterPrevHunk)
-map <Leader>hn <Plug>(GitGutterNextHunk)
+map [h <Plug>(GitGutterPrevHunk)
+map ]h <Plug>(GitGutterNextHunk)
 map <Leader>g :below G<CR>
 
 " Settings for fzf

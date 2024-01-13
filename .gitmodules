@@ -29,9 +29,6 @@
 [submodule "pack/plugins/start/solarized-theme"]
 	path = pack/plugins/start/solarized-theme
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "pack/plugins/start/coc"]
-	path = pack/plugins/start/coc
-	url = https://github.com/neoclide/coc.nvim.git
 [submodule "pack/plugins/start/fzf"]
 	path = pack/plugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
@@ -44,3 +41,6 @@
 [submodule "pack/plugins/start/snakemake"]
 	path = pack/plugins/start/snakemake
 	url = https://github.com/johnarevalo/vim-snakemake
+[submodule "pack/plugins/start/lsp"]
+	path = pack/plugins/start/lsp
+	url = https://github.com/yegappan/lsp

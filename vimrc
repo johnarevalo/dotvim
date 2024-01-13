@@ -149,7 +149,4 @@ set foldnestmax=2
 set foldmethod=indent
 set foldlevelstart=20
 
-" Double ESC to exit from terminal mode
-" tnoremap <silent> <C-[><C-[> <C-\><C-n>
-
-runtime coc.vim
+runtime lsp.vim

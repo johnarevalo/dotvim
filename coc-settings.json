@@ -1,8 +1,0 @@
-{
-    "inlayHint.enable": false,
-    "pyright.testing.provider": "pytest",
-    "python.linting.pylintEnabled": true,
-    "python.linting.mypyEnabled": true,
-    "python.formatting.provider": "yapf",
-    "coc.preferences.extensionUpdateCheck": "never"
-}

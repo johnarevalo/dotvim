@@ -16,20 +16,3 @@ nmap <Leader>ts :TestSuite<CR>
 if !exists("current_compiler")
   compiler python
 endif
-
-
-let pylsp_config ={
-\    "pylsp": {
-\        "plugins": {
-\            "pycodestyle": { "enabled": v:false},
-\            "autopep8": { "enabled": v:false},
-\        }
-\    }
-\}
-
-call LspAddServer([#{name: 'pylsp',
-                 \   filetype: 'python',
-                 \   path: 'pylsp',
-                 \   args: [],
-                 \   workspaceConfig: pylsp_config
-                 \ }])

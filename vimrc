@@ -85,6 +85,7 @@ set background=light
 colorscheme solarized
 let g:solarized_visibility="normal"
 let g:solarized_contrast="normal"
+let $BAT_THEME="Solarized (light)"
 
 
 " Showing line numbers and length

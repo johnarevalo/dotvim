@@ -27,6 +27,7 @@ let pylsp_config ={
 \                 "executable": "ruff",
 \                 "format": ["I"],
 \                 "targetVersion": "py310",
+\                 "perFileIgnores": {"__init__.py": "F401"},
 \            },
 \        }
 \    }

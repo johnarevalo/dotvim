@@ -44,3 +44,6 @@
 [submodule "pack/plugins/start/lsp"]
 	path = pack/plugins/start/lsp
 	url = https://github.com/yegappan/lsp
+[submodule "pack/plugins/start/devicons"]
+	path = pack/plugins/start/devicons
+	url = https://github.com/ryanoasis/vim-devicons.git

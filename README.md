@@ -14,7 +14,6 @@ Update all submodules:
     git submodule update --remote
 
 
-Install CoC libraries (requires yarn)
+Install LSP python:
 
-    cd ~/.vim/pack/plugins/start/coc
-    yarn install
+    mamba install python-lsp-server python-lsp-ruff rope yapf

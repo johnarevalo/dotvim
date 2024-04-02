@@ -4,7 +4,7 @@ map <Leader>m Obreakpoint()<C-c>
 
 " vim-test
 let test#strategy = "dispatch"
-let test#python#runner = 'pytest'
+let g:test#python#pytest#executable = 'python -m pytest -vv'
 
 nmap <Leader>tn :TestNearest<CR>
 nmap <Leader>tf :TestFile<CR>

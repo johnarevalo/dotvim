@@ -81,11 +81,11 @@ vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
 " Color scheme
-set background=light
+set background=dark
 colorscheme solarized
 let g:solarized_visibility="normal"
 let g:solarized_contrast="normal"
-let $BAT_THEME="Solarized (light)"
+let $BAT_THEME="Solarized (dark)"
 
 
 " Showing line numbers and length

@@ -123,8 +123,8 @@ set noswapfile
 " cd ~/.vim/bundle
 " git clone git://github.com/tpope/vim-fugitive.git
 " vim -u NONE -c 'helptags vim-fugitive/doc' -c q
-map [h <Plug>(GitGutterPrevHunk)
-map ]h <Plug>(GitGutterNextHunk)
+map [c <Plug>(GitGutterPrevHunk)
+map ]c <Plug>(GitGutterNextHunk)
 map <Leader>g :below G<CR>
 
 " Settings for fzf

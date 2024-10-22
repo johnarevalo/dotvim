@@ -50,3 +50,6 @@
 [submodule "pack/plugins/start/vimtex"]
 	path = pack/plugins/start/vimtex
 	url = https://github.com/lervag/vimtex.git
+[submodule "pack/plugins/start/slime"]
+	path = pack/plugins/start/slime
+	url = git@github.com:jpalardy/vim-slime.git

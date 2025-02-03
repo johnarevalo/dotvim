@@ -150,4 +150,15 @@ set foldnestmax=2
 set foldmethod=indent
 set foldlevelstart=20
 
+let g:slime_target = "vimterminal"
+nmap <Leader>w :SlimeSendCurrentLine<CR>
+
+augroup SpecialBuffers
+    autocmd!
+    " Set terminal buffers as nobuflisted
+    autocmd TerminalOpen * if &buftype == 'terminal' | setlocal nobuflisted | endif
+    " Set quickfix and location list buffers as nobuflisted
+    autocmd BufWinEnter * if &buftype == 'quickfix' || &buftype == 'loclist' | setlocal nobuflisted | endif
+augroup END
+
 runtime lsp.vim
